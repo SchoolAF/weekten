@@ -5,11 +5,11 @@ import (
 	"os"
 )
 
-var MongoString string = os.Getenv("MONGOSTRING")
+var MongoString string = os.Getenv("MONGOSTRCONNECT")
 
 var MongoInfo = atdb.DBInfo{
 	DBString: MongoString,
-	DBName:   "tesdb2024",
+	DBName:   "WSDB",
 }
 
 var MongoConn = atdb.MongoConnect(MongoInfo)
